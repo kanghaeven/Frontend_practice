@@ -1,0 +1,7 @@
+diff a/b.txt b/b.txt	(rejected hunks)
+@@ -1,3 +0,3 @@
+-add b.txt
++add b.tx\\\
+ 
+ 넘나 어려워
+\ No newline at end of file
