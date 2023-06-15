@@ -23,13 +23,6 @@
   ],
   "words": [
     {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": true
-    },
-    {
       "id": 3,
       "day": 2,
       "eng": "car",
@@ -49,13 +42,6 @@
       "eng": "pencil",
       "kor": "연필",
       "isDone": false
-    },
-    {
-      "day": 1,
-      "eng": "house",
-      "kor": "집",
-      "isDone": false,
-      "id": 8
     },
     {
       "day": 2,
@@ -100,13 +86,6 @@
       "id": 15
     },
     {
-      "day": "1",
-      "eng": "panda",
-      "kor": "판다",
-      "isDone": false,
-      "id": 16
-    },
-    {
       "day": "5",
       "eng": "bag",
       "kor": "가방",
@@ -135,13 +114,6 @@
       "id": 20
     },
     {
-      "day": "1",
-      "eng": "Oohaha",
-      "kor": "우하하",
-      "isDone": false,
-      "id": 21
-    },
-    {
       "day": "5",
       "eng": "Ddahukhuk",
       "kor": "따흑흑",
@@ -154,6 +126,27 @@
       "kor": "사과",
       "isDone": false,
       "id": 23
+    },
+    {
+      "day": "1",
+      "eng": "love",
+      "kor": "사랑",
+      "isDone": false,
+      "id": 24
+    },
+    {
+      "day": "1",
+      "eng": "freedom",
+      "kor": "자유",
+      "isDone": true,
+      "id": 25
+    },
+    {
+      "day": "1",
+      "eng": "symbol",
+      "kor": "상징",
+      "isDone": false,
+      "id": 26
     }
   ]
 }
