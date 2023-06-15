@@ -79,13 +79,6 @@
       "id": 11
     },
     {
-      "day": 3,
-      "eng": "apple",
-      "kor": "사과",
-      "isDone": false,
-      "id": 12
-    },
-    {
       "day": "4",
       "eng": "dog",
       "kor": "개",
@@ -119,6 +112,48 @@
       "kor": "가방",
       "isDone": true,
       "id": 17
+    },
+    {
+      "day": "",
+      "eng": "",
+      "kor": "",
+      "isDone": false,
+      "id": 18
+    },
+    {
+      "day": "",
+      "eng": "",
+      "kor": "",
+      "isDone": false,
+      "id": 19
+    },
+    {
+      "day": "",
+      "eng": "",
+      "kor": "",
+      "isDone": false,
+      "id": 20
+    },
+    {
+      "day": "1",
+      "eng": "Oohaha",
+      "kor": "우하하",
+      "isDone": false,
+      "id": 21
+    },
+    {
+      "day": "5",
+      "eng": "Ddahukhuk",
+      "kor": "따흑흑",
+      "isDone": false,
+      "id": 22
+    },
+    {
+      "day": "3",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 23
     }
   ]
 }
