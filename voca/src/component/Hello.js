@@ -1,29 +1,36 @@
+import { useState } from "react";
+import UserName from "./UserName";
 
+export default function Hello({ age }) {
 
-export default function Hello() {
+  // let name = "Haeven"; // Vanilla JS
+  
+  console.log(age);
 
-  function showName() {
-    console.log("Haeven");
-  }
-  function showAge(age) {
-    console.log(age);
-  }
-  function showText(txt) {
-    console.log(txt)
+  const [name, setName] = useState('Haeven');
+  // const [age, setAge] = useState(props.age);
+  const msg = age > 19 ? "성인입니다." : "미성년자입니다.";
+  
+  function changeName() {
+    // name = name === "Haeven" ? "Aubeuhi" : "Haeven"; // Vanilla JS
+    // document.getElementById("name").innerText = name; // Vanilla JS
+    
+    console.log(name);
+
+    // setName(name === "Haeven" ? "Aubeuhi" : "Haeven");
   }
 
   return (
     <div>
-      <p>Hello</p>
-
-      <button onClick={showName}>Show name</button>
+      <h1>State</h1>
+      <h2>컴포넌트의 속성값</h2>
+      <UserName name={name} />
+      <h3 id="name">{name}({age}) : {msg}</h3>
+      {/* <button onClick={changeName}>Change</button> */}
       <button onClick={() => {
-        showAge(30); // 매개변수 전달하기 좋음
-      }}>Show age</button>
-      <input type="text" onChange={e => {
-        const txt = e.target.value;
-        showText(txt);
-      }}/>
+        setName(name === "Haeven" ? "Aubeuhi" : "Haeven");
+        // setAge(age + 1);
+      }}>Change</button>
     </div>
 
   );
