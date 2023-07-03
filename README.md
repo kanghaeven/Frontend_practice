@@ -42,8 +42,10 @@ fetch, async await, promise 등 여러 비동기방식의 차이점을 정확하
 - 필수과제 : Next.js, TypeScript로 프로젝트 토대 만들기
 - 프로젝트 JobGPT : 백엔드 Java 서버와 연결
 <div>
+
 ![Alt text](https://cdn.discordapp.com/attachments/1061992590674767902/1123698308817358958/IMG_1011.jpg)
 ![Alt text](https://cdn.discordapp.com/attachments/1061992590674767902/1123698309232599131/IMG_1010.jpg)
+
 </div>
 
 ### 문제 
