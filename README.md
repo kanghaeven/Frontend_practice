@@ -1,5 +1,58 @@
 <br>
 
+## 230705
+- 프로그래머스 사칙연산, 조건문, 배열
+- 정처기 실기 : 
+- 리액트
+  <br>
+  - state : 데이터가 저장되는 곳<br>
+  - 리액트가 아닌 경우, 일반 자바스크립트를 쓴 브라우저는 노드 정보가 바뀔 때 마다 노드 트리를 5단계에 걸쳐서 다시 생성<br>
+  리액트의 경우, 가상돔을 써서 우리 시야에 보이는 부분만 수정해서 보여주고 모든 업뎃이 끝나면 일괄로 합쳐서 실제 돔에 던짐<br>
+  프론트엔드는 렌더트리 단계를 얼마나 최적화하는가가 중요 !<br>
+  <br>
+  - React.useState() 함수 : 초기값 설정 [undifined, f] ([data, data 바꿀 때 사용하는 함수])<br>
+  <br>
+  - 구조 분헤 할당 : 배열이나 객체의 속성을 해체하여 그 값을 개별 **변수**에 담을 수 있게 하는 Javascript 표현식<br>
+    ```
+    const box = ['pen', 'speaker','books'];
+    const [a, b, c] = box
+    ```
+  <br>
+  
+  - 1. counter라는 데이터 받음
+    2. return()에 그 데이터를 담고 있음 (사용자가 보게될 컴포넌트)
+    3. 버튼이 클릭되면 counter값을 바꿔줄 함수 호출 -> setCounter
+    4. counter의 새로운 값을 가지고 counter 함수를 호출
+    5. 그 새로운 값은 setCounter(counter+1)에 써준 counter+1
+    ```
+    function App() {
+      const [counter, setCounter] = React.useState(0);
+      const onClick = () => {
+        setCounter(counter + 1);
+      }
+      return (
+        <div>
+          <h3>
+            Total Clicks: {counter}
+          </h3>
+          <button onClick={onClick}>
+            Click me
+          </button>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(root).render(<App />);
+    ```
+  <br>
+
+<br>
+
+## 230704
+- 프로그래머스 약수의 합
+- 프리 온보딩 : MPA, SPA, CSR, Browser Rendering
+
+<br>
+
 ## 230703
 - 정처기 실기 : 소프트웨어 개발 방법론
 - 리드미 작성
