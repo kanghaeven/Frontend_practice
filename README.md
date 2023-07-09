@@ -5,6 +5,7 @@
 - 정처기
   `git log` : 커밋 목록 확인
   `git reset --hard 커밋 번호` : 그 커밋으로 가기
+  `// @ts-nocheck` :
 
 <br>
 
