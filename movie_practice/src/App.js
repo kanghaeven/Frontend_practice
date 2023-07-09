@@ -1,29 +1,34 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
-  const [counter, setValue] = useState(0);
-  const [keyword, setKeyword] = useState("");
-  const onClick = () => setValue((prev) => prev + 1);
-  const onChange = (event) => setKeyword(event.target.value);
-  console.log("I run all the time.");
-  useEffect(() => {
-    console.log("CALL THE API...");
-  }, []);
-  useEffect(() => {
-    if (keyword !== "" && keyword.length > 5) {
-      console.log("Search for", keyword);
+  const [toDo, setToDo] = useState("");
+  const [toDos, setToDos] = useState([]);
+  const onChange = (event) => setToDo(event.target.value);
+  const onSubmit = (event) => {
+    event.preventDefault();
+    if (toDo === "") {
+      return;
     }
-  }, [keyword]);
+    setToDos((currentArray) => [toDo, ...currentArray]);
+    setToDo("");
+  };
+  console.log(toDos);
   return (
-    <div className="App">
-      <input
-        value={keyword}
-        onChange={onChange}
-        type="text"
-        placeholder="Search here..."
-      />
-      <h1>{counter}</h1>
-      <button onClick={onClick}>click me</button>
+    <div>
+      <h1>My To Dos ({toDos.length})</h1>
+      <form onSubmit={onSubmit}>
+        <input
+          onChange={onChange}
+          type="text"
+          value={toDo}
+          placeholder="Write your to do..."
+        />
+        <button>Add To Do</button>
+      </form>
+      <hr />
+      {toDos.map((item, idx) => (
+        <li key={idx}>{item}</li>
+      ))}
     </div>
   );
 }
