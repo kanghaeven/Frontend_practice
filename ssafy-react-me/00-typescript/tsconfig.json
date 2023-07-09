@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "scripts",
-    "target": "ES2017",
-    "module": "ESNext",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+    "outDir": "scripts", // 출력 디렉토리 설정
+    "target": "ES2017", // 컴파일 될 JavaScript 언어 버전 설정 및 호환 가능한 라이브러리 선언 포함
+    "module": "ESNext", // 모듈 가져오기/내보내기 코드 방식 설정
+    "esModuleInterop": true, // CommonJS 모듈 가져오기 지원을 위한 JavaScript 출력
+    // 타입 호환성을 위해 'allowSyntheticDefaultImports' 또한 활성화
+    "forceConsistentCasingInFileNames": true, // 모듈 가져오기에서 대소문자가 올바른지 확인
+    "strict": true, // 엄격하게 모든 타입 검사 옵션 활성화
+    "skipLibCheck": true // 모든 .d.ts 파일의 타입 검사 생략(skip) 설정
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "scripts", "dist"]
