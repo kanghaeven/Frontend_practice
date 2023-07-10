@@ -1,12 +1,29 @@
-## 230708
+<br>
+
+## 230710
+
+- 리액트 모듈형 강의 함수형 프로그래밍
+  정처기 1회독을 하고 시험을 보기 위해선 이제 정말 봐야한다!!!
+
+<br>
+
+## 230709
 
 - 노마드코더 ReactJS로 영화 웹서비스 만들기 완강
-- 리액트 모듈형 강의 typescript
-  `git log` : 커밋 목록 확인
-  `git reset --hard 커밋 번호` : 그 커밋으로 가기
-  `// @ts-nocheck` : 애러 무시하고 일단 실행
+- 리액트 모듈형 강의 typescript<br>
+  `git log` : 커밋 목록 확인<br>
+  `git reset --hard 커밋 번호` : 그 커밋으로 가기<br>
+  `// @ts-nocheck` : 애러 무시하고 일단 실행<br>
 
 ![Alt text](https://cdn.discordapp.com/attachments/1061992590674767902/1127650004933296138/2023-07-09_6.17.24.png)
+
+<br>
+
+## 230708
+
+- toss 코딩구현과제
+- react todo list
+  앞으로는 할거 다 하고 쉬어야겠다. 하다 놓기 금지!
 
 <br>
 
