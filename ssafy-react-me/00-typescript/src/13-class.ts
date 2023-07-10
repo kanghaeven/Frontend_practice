@@ -1,7 +1,7 @@
 // --------------------------------------------------------------------------
 // ES5 Constructor (like. Class) with Module Pattern (IIFE)
 
-import ApiClient from "./ApiClient";
+import ApiClient from "./ApiClient.ts";
 
 interface Todo {
   userId: number;
