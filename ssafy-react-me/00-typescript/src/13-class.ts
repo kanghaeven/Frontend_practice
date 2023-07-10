@@ -1,3 +1,4 @@
+// @ts-nocheck
 // --------------------------------------------------------------------------
 // ES5 Constructor (like. Class) with Module Pattern (IIFE)
 
