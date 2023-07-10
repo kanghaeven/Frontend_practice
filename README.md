@@ -1,11 +1,12 @@
 ## 230708
 
 - 노마드코더 ReactJS로 영화 웹서비스 만들기 완강
-- 리액트 모듈형 강의
-- 정처기
+- 리액트 모듈형 강의 typescript
   `git log` : 커밋 목록 확인
   `git reset --hard 커밋 번호` : 그 커밋으로 가기
-  `// @ts-nocheck` :
+  `// @ts-nocheck` : 애러 무시하고 일단 실행
+
+![Alt text](https://cdn.discordapp.com/attachments/1061992590674767902/1127650004933296138/2023-07-09_6.17.24.png)
 
 <br>
 
