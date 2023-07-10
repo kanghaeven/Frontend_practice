@@ -11,7 +11,7 @@ const originalValue = [
 
 const expectedValue = [
   {
-    key: 'programming-0',
+    key: 'programming-1',
     name: '명령형 프로그래밍',
   },
   {
@@ -24,6 +24,10 @@ function run() {
   const receivedValue = [...originalValue];
 
   // 명령형 코드를 여기에 작성합니다.
+  for(let i = 0, l = receivedValue.length; i < l; ++i) {
+    const receivedItem = receivedValue[i];
+    receivedItem.key = `programming-${i + 1}`;
+  }
 
   return receivedValue;
 }
