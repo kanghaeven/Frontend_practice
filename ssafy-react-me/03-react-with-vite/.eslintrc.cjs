@@ -7,7 +7,9 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:react/jsx-runtime"
+        "plugin:react/jsx-runtime",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended"
     ],
     "overrides": [
         {
@@ -27,8 +29,14 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jsx-a11y",
+        "react-hooks",
+        'react-refresh'
     ],
     "rules": {
+        'react-hooks/rules-of-hooks': "error",
+        'react-hooks/exhaustive-deps':' "warn",
+        'react-refresh/only-export-components':' "warn"
     }
 }

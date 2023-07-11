@@ -9,7 +9,9 @@ function App() {
     <h2>정적 에셋</h2>
     <img src="/ReactLogo.svg" alt="React Logo" />
     <h2>동적 에셋</h2>
-    <img src={reactLogoPath} alt="React Logo Path" />
+    <a href="https://react.dev" target="_blank">
+      <img src={reactLogoPath} alt="React Logo Path" />
+    </a>
   </div>
   );
 }
