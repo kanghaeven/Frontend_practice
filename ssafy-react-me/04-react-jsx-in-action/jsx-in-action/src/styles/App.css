@@ -121,9 +121,9 @@
       background: transparent;
       color: inherit;
 
-      & svg {
-        /* pointer-events: none; */
-      }
+      /* & svg {
+        pointer-events: none;
+      } */
     }
 
     .scrollDown {
