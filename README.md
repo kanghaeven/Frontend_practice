@@ -1,5 +1,27 @@
 <br>
 
+## 230712
+
+-
+
+```
+const renderList = ({ reverse = false } = {}) => {
+  let processArray = statusMessage;
+
+  if (reverse) {
+    processArray = [...statusMessage].reverse();
+  }
+
+  return processArray.map((message, idx) => <li key={idx}>{message}</li>);
+};
+```
+
+- key가 중요한 이유 : 전과 현재 virual DOM을 비교해서 변경사항이 발생할 때만 새롭게 업데이트를 수행
+
+- 비구조화 할당 : 객체나 배열에서 원하는 값들을 추출하여 변수에 할당하는 문법, 함수 호출 시 객체를 전달하지 않거나 속성이 명시적으로 설정되지 않은 경우에도 `={}`로 기본값을 설정할 수 있다.
+
+<br>
+
 ## 230711
 
 - 리액트 모듈형 강의 React with vite
