@@ -1,32 +1,38 @@
+import "./styles/App.css";
+
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 
 // 스타일 및 에셋 연결
 
-const imageType = 'react';
+const imageType = "react";
 
 const isShowReactImage = true;
 
 const statusMessage = [
-  '⌛️ 대기',
-  '⏳ 로딩 중...',
-  '✅ 로딩 성공!',
-  '❌ 로딩 실패.',
+  "⌛️ 대기",
+  "⏳ 로딩 중...",
+  "✅ 로딩 성공!",
+  "❌ 로딩 실패.",
 ];
 
 const reactLibrary = {
-  name: 'React',
-  author: '조던 워케(Jordan Walke)',
-  writtenIn: 'JavaScript',
-  type: 'JavaScript 라이브러리',
-  license: 'MIT',
+  name: "React",
+  author: "조던 워케(Jordan Walke)",
+  writtenIn: "JavaScript",
+  type: "JavaScript 라이브러리",
+  license: "MIT",
 };
+
+let mounted = 0;
 
 function App() {
   const renderList = () => {
     return null;
   };
+
+  console.log(++mounted); // 0 + 1
 
   return (
     <div className="App">
