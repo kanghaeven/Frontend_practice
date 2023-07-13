@@ -2,7 +2,7 @@
 
 ## 230712
 
--
+- 리액트 모듈형 강의 JSX in action
 
 ```
 const renderList = ({ reverse = false } = {}) => {
@@ -42,6 +42,7 @@ const renderList = ({ reverse = false } = {}) => {
 
 - 노마드코더 ReactJS로 영화 웹서비스 만들기 완강
 - 리액트 모듈형 강의 typescript<br>
+
   `git log` : 커밋 목록 확인<br>
   `git reset --hard 커밋 번호` : 그 커밋으로 가기<br>
   `// @ts-nocheck` : 애러 무시하고 일단 실행<br>
