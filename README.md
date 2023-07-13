@@ -2,11 +2,15 @@
 
 ## 230713
 
-- Compound Component Pattern
+- 공통 PJT 1주차: 개인 공부 정리한 리드미 제출
+- 리액트 모듈형 강의 component props
+- Compound Component Pattern에 더 알아보기
   - React.StrictMode
   - React.Component
   - React.PureComponent
   - React.Fragment
+
+매일 정리한게 과제에 도움이 많이 되었다. 정리하는 습관을 들여야겠다.
 
 <br>
 
