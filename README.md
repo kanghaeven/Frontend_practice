@@ -1,5 +1,15 @@
 <br>
 
+## 230713
+
+- Compound Component Pattern
+  - React.StrictMode
+  - React.Component
+  - React.PureComponent
+  - React.Fragment
+
+<br>
+
 ## 230712
 
 - 리액트 모듈형 강의 JSX in action
