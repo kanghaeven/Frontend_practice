@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import { oneOf, arrayOf, string, bool, func, shape } from "prop-types";
 import "../styles/DescriptoinList.css";
 import vitePath from "../assets/vite.svg";
 import reactPath from "/react.svg";
@@ -75,16 +75,16 @@ function DescriptionList({
 }
 
 DescriptionList.propTypes = {
-  statusMessage: PropTypes.arrayOf(PropTypes.string).isRequired,
-  imageType: PropTypes.oneOf(["react", "vite"]).isRequired,
-  isShowReactImage: PropTypes.bool.isRequired,
-  renderList: PropTypes.func.isRequired,
-  reactLibrary: PropTypes.shape({
-    name: PropTypes.string,
-    author: PropTypes.string,
-    writtenIn: PropTypes.string,
-    type: PropTypes.string,
-    license: PropTypes.string,
+  statusMessage: arrayOf(string).isRequired,
+  imageType: oneOf(["react", "vite"]).isRequired,
+  isShowReactImage: bool.isRequired,
+  renderList: func.isRequired,
+  reactLibrary: shape({
+    name: string,
+    author: string,
+    writtenIn: string,
+    type: string,
+    license: string,
   }).isRequired,
 };
 
