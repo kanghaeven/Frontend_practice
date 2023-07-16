@@ -4,10 +4,7 @@
 
 //
 
-import { DescriptionList } from "../components";
-import ScrollButton, {
-  ScrollButtonGroup,
-} from "../components/ScrollButton/ScrollButton";
+import { DescriptionList, ScrollButton } from "../components";
 import "./App.css";
 
 function App() {
@@ -19,10 +16,10 @@ function App() {
 
       <DescriptionList />
 
-      <ScrollButtonGroup>
+      <ScrollButton.Group>
         <ScrollButton mode="up" />
         <ScrollButton mode="down" />
-      </ScrollButtonGroup>
+      </ScrollButton.Group>
     </div>
   );
 }
