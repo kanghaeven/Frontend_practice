@@ -1,25 +1,25 @@
-import './styles/App.css';
+import "./styles/App.css";
 
-import ScrollButton from './components/ScrollButton';
-import DescriptionList from './components/DescriptionList';
+import ScrollButton from "./components/ScrollButton";
+import DescriptionList from "./components/DescriptionList";
 
-const imageType = 'react';
+const imageType = "react";
 
 const isShowReactImage = true;
 
 const statusMessage = [
-  '⌛️ 대기',
-  '⏳ 로딩 중...',
-  '✅ 로딩 성공!',
-  '❌ 로딩 실패.',
+  "⌛️ 대기",
+  "⏳ 로딩 중...",
+  "✅ 로딩 성공!",
+  "❌ 로딩 실패.",
 ];
 
 const reactLibrary = {
-  name: 'React',
-  author: '조던 워케(Jordan Walke)',
-  writtenIn: 'JavaScript',
-  type: 'JavaScript 라이브러리',
-  license: 'MIT',
+  name: "React",
+  author: "조던 워케(Jordan Walke)",
+  writtenIn: "JavaScript",
+  type: "JavaScript 라이브러리",
+  license: "MIT",
 };
 
 const renderList = ({ isReverse = false } = {}) => {
@@ -29,18 +29,18 @@ const renderList = ({ isReverse = false } = {}) => {
 
 const handleScrollMove = ({ currentTarget, target }) => {
   const { top } = currentTarget.getBoundingClientRect();
-  const appElement = document.querySelector('.App');
+  const appElement = document.querySelector(".App");
 
-  if (target.matches('.scrollDown')) {
+  if (target.matches(".scrollDown")) {
     appElement.scroll({
       top,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
-  if (target.matches('.scrollUp')) {
+  if (target.matches(".scrollUp")) {
     appElement.scroll({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
 };
@@ -61,7 +61,7 @@ function App() {
       <DescriptionList {...descriptionListProps} />
       <ScrollButton.Group onScroll={handleScrollMove}>
         <ScrollButton />
-        <ScrollButton mode="up" />
+        <ScrollButton mode="up" label="위로 끌어 올리기" />
       </ScrollButton.Group>
     </div>
   );
