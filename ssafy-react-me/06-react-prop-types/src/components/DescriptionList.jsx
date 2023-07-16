@@ -1,6 +1,7 @@
-import '../styles/DescriptoinList.css';
-import vitePath from '../assets/vite.svg';
-import reactPath from '/react.svg';
+import PropTypes from "prop-types";
+import "../styles/DescriptoinList.css";
+import vitePath from "../assets/vite.svg";
+import reactPath from "/react.svg";
 
 function DescriptionList({
   statusMessage,
@@ -22,8 +23,8 @@ function DescriptionList({
       <dd>
         <p>이미지 타입(image type)에 따라 렌더링 여부를 결정합니다.</p>
         <div className="conditionalRendering">
-          <img src={imageType === 'vite' ? vitePath : reactPath} alt="" />
-          <span>{imageType === 'vite' ? 'Vite' : 'React'}</span>
+          <img src={imageType === "vite" ? vitePath : reactPath} alt="" />
+          <span>{imageType === "vite" ? "Vite" : "React"}</span>
         </div>
       </dd>
       <dd style={{ marginTop: 12 }}>
@@ -72,5 +73,19 @@ function DescriptionList({
     </dl>
   );
 }
+
+DescriptionList.propTypes = {
+  statusMessage: PropTypes.arrayOf(PropTypes.string).isRequired,
+  imageType: PropTypes.oneOf(["react", "vite"]).isRequired,
+  isShowReactImage: PropTypes.bool.isRequired,
+  renderList: PropTypes.func.isRequired,
+  reactLibrary: PropTypes.shape({
+    name: PropTypes.string,
+    author: PropTypes.string,
+    writtenIn: PropTypes.string,
+    type: PropTypes.string,
+    license: PropTypes.string,
+  }).isRequired,
+};
 
 export default DescriptionList;
