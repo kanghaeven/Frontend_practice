@@ -1,7 +1,22 @@
-import { arrayOf, bool, exact, func, oneOf, string } from 'prop-types';
-import '@/styles/DescriptoinList.css';
-import vitePath from '@/assets/vite.svg';
+import '../styles/DescriptoinList.css';
+import vitePath from '../assets/vite.svg';
 import reactPath from '/react.svg';
+
+interface Props {
+  statusMessage: string[];
+  imageType: 'react' | 'vite';
+  isShowReactImage: boolean;
+  renderList: ({
+    isReverse,
+  }?: {
+    isReverse?: boolean | undefined;
+  }) => React.ReactNode[];
+  reactLibrary: {
+    [key: string]: string;
+  };
+}
+
+/* -------------------------------------------------------------------------- */
 
 function DescriptionList({
   statusMessage,
@@ -9,7 +24,7 @@ function DescriptionList({
   isShowReactImage,
   renderList,
   reactLibrary,
-}) {
+}: Props): JSX.Element {
   return (
     <dl className="descriptionList">
       <dt>데이터 바인딩(data binding)</dt>
@@ -73,25 +88,5 @@ function DescriptionList({
     </dl>
   );
 }
-
-DescriptionList.defaultProps = {
-  renderList: () => {},
-};
-
-DescriptionList.propTypes = {
-  statusMessage: arrayOf(
-    oneOf(['⌛️ 대기', '⏳ 로딩 중...', '✅ 로딩 성공!', '❌ 로딩 실패.'])
-  ).isRequired,
-  imageType: oneOf(['react', 'vite']).isRequired,
-  isShowReactImage: bool.isRequired,
-  renderList: func,
-  reactLibrary: exact({
-    name: string,
-    author: string,
-    writtenIn: string,
-    type: string,
-    license: string,
-  }).isRequired,
-};
 
 export default DescriptionList;

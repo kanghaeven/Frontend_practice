@@ -32,10 +32,9 @@
     display: inline-block;
     margin-bottom: 8px;
   }
+}
 
-  .spinner {
-    order: -1;
-    height: 48px;
-    margin-right: 4px;
-  }
+.container {
+  max-inline-size: 1280px;
+  margin-inline: auto;
 }
